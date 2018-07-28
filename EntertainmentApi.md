@@ -37,8 +37,8 @@ When you're connected and auto-updating, it's possible to change the color and b
 ### Basics
 ```cs
 //Change brightness and color
-entGroup.SetBrightness(1);
-entGroup.SetColor(new RGBColor("FF0000"));
+entGroup.State.SetBrightness(1);
+entGroup.State.SetColor(new RGBColor("FF0000"));
 
 //Change them both at the same time with a transition time of 1 second
 entGroup.SetState(new RGBColor("FF0000"), 1, TimeSpan.FromSeconds(1));
